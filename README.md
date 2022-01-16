@@ -1,4 +1,4 @@
-# Meus estudos para o desenvolvimento de API's REST usando o ecossistema do Spring Boot
+# Meus estudos para o desenvolvimento de uma API's REST usando o ecossistema do Spring Boot
 
 
 ⚠️Estes estudos não têm garantia de suas funcionalidades em projetos comerciais. ⚠️
