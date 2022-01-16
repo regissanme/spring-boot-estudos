@@ -6,6 +6,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * Projeto: jpa
+ * Desenvolvedor: Reginaldo Santos de Medeiros (regissanme)
+ * Data: 14/01/2022
+ * Hora: 15:30
+ */
 @Entity
 public class LocalEvento {
 

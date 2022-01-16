@@ -23,7 +23,7 @@ Para executar a aplicação pelo terminal, na sua máquina local, digite o segui
 
 Após executar o comando acima, basta apenas abrir o navegador de sua preferência e acessar a API pelo endereço:  
 <code>
-http://localhost:8080/api/v1/
+http://localhost:8080/api/v1/  
 </code>
 
 

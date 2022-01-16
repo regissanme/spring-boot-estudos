@@ -44,7 +44,7 @@ public class EventoService {
         return ResponseEntity.ok(verificaSeExiste(id));
     }
 
-    public ResponseEntity<List<Evento>> findAll(){
+    public ResponseEntity<List<Evento>> findAll() {
         return ResponseEntity.ok(eventoRepository.findAll());
     }
 

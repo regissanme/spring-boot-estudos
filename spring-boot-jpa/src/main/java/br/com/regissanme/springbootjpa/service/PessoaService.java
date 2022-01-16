@@ -43,7 +43,7 @@ public class PessoaService {
                 .body(verificaSeExiste(id));
     }
 
-    public ResponseEntity<List<Pessoa>> findAll(){
+    public ResponseEntity<List<Pessoa>> findAll() {
         return ResponseEntity.ok()
                 .body(pessoaRepository.findAll());
     }
