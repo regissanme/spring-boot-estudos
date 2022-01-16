@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "4dff03c2-1b74-4751-9919-f87eb99198f2",
+		"name": "Estudo JPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pessoa",
+			"item": [
+				{
+					"name": "getPessoa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pessoa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pessoa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPessoas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pessoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "savePessoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Agente Smith\",\r\n    \"telefones\": [\r\n        {            \r\n            \"numero\": \"00 0000-0000\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pessoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePessoa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"nome\": \"Oráculo\",\r\n        \"telefones\": [\r\n            {                \r\n                \"numero\": \"99 9999-9999\"\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pessoa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pessoa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePessoa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/pessoa/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"pessoa",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evento",
+			"item": [
+				{
+					"name": "getEVento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/evento/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"evento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEventos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/evento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"evento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveEvento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Matrix Resurrections\",\r\n        \"localEvento\": {\r\n            \"local\": \"A definir...\"\r\n        },\r\n        \"pessoas\": [\r\n            {\r\n                \"id\": 3,\r\n                \"nome\": \"Neo\",\r\n                \"telefones\": [\r\n                    {\r\n                        \"id\": 2,\r\n                        \"numero\": \"22 2222-2222\"\r\n                    },\r\n                    {\r\n                        \"id\": 3,\r\n                        \"numero\": \"33 3333-3333\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": 4,\r\n                \"nome\": \"Trinity\",\r\n                \"telefones\": [\r\n                    {\r\n                        \"id\": 4,\r\n                        \"numero\": \"44 4444-4444\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/evento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"evento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEvento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/evento/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"evento",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEvento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 5,\r\n        \"nome\": \"Matrix Resurrections\",\r\n        \"localEvento\": {\r\n            \"id\": 5,\r\n            \"local\": \"Quase definido ;D\"\r\n        },\r\n        \"pessoas\": [\r\n            {\r\n                \"id\": 3,\r\n                \"nome\": \"Neo\",\r\n                \"telefones\": [\r\n                    {\r\n                        \"id\": 2,\r\n                        \"numero\": \"22 2222-2222\"\r\n                    },\r\n                    {\r\n                        \"id\": 3,\r\n                        \"numero\": \"33 3333-3333\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"id\": 4,\r\n                \"nome\": \"Trinity\",\r\n                \"telefones\": [\r\n                    {\r\n                        \"id\": 4,\r\n                        \"numero\": \"44 4444-4444\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/evento/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"evento",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Swagger-UI",
+			"item": [
+				{
+					"name": "getDocs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/swagger-ui/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"swagger-ui",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
