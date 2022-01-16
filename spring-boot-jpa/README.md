@@ -1,64 +1,52 @@
-# Desenvolvimento de um sistema de gerenciamento de pessoas em API REST com Spring Boot
+# Estudos sobre a JPA 
 
-## 06/01/2021 - Desafio de Projeto do Bootcamp Cognizant Java Developer
-#teamJavaCog
+Estudos sobre JPA em um API REST usando o Spring Boot
 
-⚠️ Não estou disponibilizando o link direto para o desafio, pois o mesmo faz parte da trilha de alguns Bootcamps. Logo, você terá que se matricular no Bootcamp para ter acesso ao curso.⚠️
+⚠️ Nenhuma garantia das funcionalidades apresentadas nesse projeto de estudos se usados em projetos comerciais. ⚠️
 
 ------------
 
-### Especialista do desafio:
-- **Rodrigo Peleias** - Desenvolvedor de Software Senior
-- [GitHub do Projeto Original](https://github.com/rpeleias-v1/personapi_digital_innovation_one)
+### Objetivo:  
+Um estudo específico da JPA, utilizando o Spring Data e o Spring Boot para o desenvolimento de uma API REST.
 
-Desafio: "Desenvolver um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com Spring Boot."
 
 ### Visão Geral
-Foram apresentados e abordados os seguintes tópicos:
-- Setup inicial do projeto com o Spring Boot Initialzr
-- Criação dos modelos de dados para o mapeamento de entidades em bancos de dados.
-- Desenvolvimento de operações de gerenciamento de usuários (Cadastro, Leitura, Atualização e Remoção de pessoas do sistema)
-- Relação de cada uma das operações acima com o padrão arquitetural REST.
-- Desenvolvimento de testes unitários para validação das funcionalidades.
-- Implantação do sistema na nuvem através do Heroku.
+Serão abordados os seguintes temas nesse estudo:
+- Criação de classes modelos que representarão as entidades no banco de dados.
+- Estudo e uso das `Annotatios` do pacote `javax.persistence`.
+- Criação de relacionamentos entre as entidades.
 
 ### Execução da aplicação
-Para executar a aplicação pelo terminal, na sua máquina local, digite o seguinte comando:  
+Para executar a aplicação pelo terminal, na sua máquina local, digite o seguinte comando dentro da pasta do projeto:  
 
   <code> mvn spring-boot:run </code>
 
-Após executar o comando acima, basta apenas abrir o seu navegador preferido e acessar a API pelo endereço:  
+Após executar o comando acima, basta apenas abrir o navegador de sua preferência e acessar a API pelo endereço:  
 
-<code> http://localhost:8080/api/v1/people </code>
+<code> http://localhost:8080/api/v1/ </code>
 
 
 
-### Requisitos mínimos para criação e execução do projeto
+### Recursos utilizados nesse projeto
 - Java 11 ou versões superiores.
 - Maven 3.8.1 ou versões superiores.
-- IntelliJ IDEA Community ou a IDE Java de sua preferência.
+- IntelliJ IDEA Community (pode ser usada a IDE Java de sua preferência).
 - H2 Database.
-- Git instalados na máquina para o versionamento do código. (desejável)
-- Conta no GitHub para armazenamento do seu projeto na nuvem. (desejável)
+- Git instalados na máquina para o versionamento do código.
 
-### Ferramentas utilizadas nesse projeto
+### Ferramentas e frameworks utilizados nesse projeto
 - Estilo arquitetural REST.
 - Spring Boot Framework.
+- Spring Web
 - Spring Data.
-- Spring Test.
-- Lombok.
-- Map Struct.
 - Postman.
-- Deploy no heroku.
+- Swagger-UI
 
 
 ### Links úteis
 - [Spring Boot Initialzr](https://start.spring.io/)
-- [Heroku](https://www.heroku.com)
 - [Spring guides](https://spring.io/guides)
 - [Spring projects](https://spring.io/projects)
-- [Documentação do Lombok](https://projectlombok.org/)
-- [Documentação do Map Struct](https://mapstruct.org/)
 - [Documentação do Maven](https://maven.apache.org/)
 - [OpenJDK para download](https://openjdk.java.net/)
 - [OpenJDK 11](https://jdk.java.net/java-se-ri/11)
@@ -73,7 +61,7 @@ Após executar o comando acima, basta apenas abrir o seu navegador preferido e a
 
 ### Contribuições
 #### Este repositório foi criado para fins de estudo, então fique à vontade para cloná-lo, sugerir mudanças ou correções.
-#### Todo comentário é muito bem vindo!🤝
+#### Todo comentário e/ou crítica serão muito bem vindos!🤝
 
 ------------
 Disponibilizado por [Reginaldo (**regissanme**)](https://www.linkedin.com/in/reginaldo-santos-de-medeiros-59517324/).
