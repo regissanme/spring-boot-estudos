@@ -1,4 +1,4 @@
-# Estudos sobre a JPA 
+# Estudos sobre JPA 
 
 Estudos sobre JPA em um API REST usando o Spring Boot
 
@@ -49,9 +49,9 @@ http://localhost:8080/api/v1/
 Este arquivo pode ser importado para o Postman e já contém todas as requisições GET, POST, PUT e DELETE usadas no teste.
 - Para visualizar todos os endpoints da aplicação, utilizei o `Swagger` para gerar a documentação.   
 Para acessar a página do `Swagger-UI`, entre com a seguinte url no navegador  
-<code>
+<code>  
 http://localhost:8080/swagger-ui/
-</code>
+</code>  
 
 ### Links úteis
 - [Spring Boot Initialzr](https://start.spring.io/)
