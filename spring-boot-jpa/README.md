@@ -7,7 +7,7 @@ Estudos sobre JPA em um API REST usando o Spring Boot
 ------------
 
 ### Objetivo:  
-Um estudo específico da JPA, utilizando o Spring Data e o Spring Boot para o desenvolimento de uma API REST.
+Um estudo específico de JPA, utilizando o Spring Data e o Spring Boot para o desenvolimento de uma API REST.
 
 
 ### Visão Geral
@@ -22,9 +22,9 @@ Para executar a aplicação pelo terminal, na sua máquina local, digite o segui
   <code> mvn spring-boot:run </code>
 
 Após executar o comando acima, basta apenas abrir o navegador de sua preferência e acessar a API pelo endereço:  
-
-<code> http://localhost:8080/api/v1/ </code>
-
+<code>
+http://localhost:8080/api/v1/
+</code>
 
 
 ### Recursos utilizados nesse projeto
@@ -42,6 +42,16 @@ Após executar o comando acima, basta apenas abrir o navegador de sua preferênc
 - Postman.
 - Swagger-UI
 
+
+### Para os teste dos endpoints   
+
+- Deixei o arquivo `Estudo JPA.postman_collection.json` na raiz do projeto.   
+Este arquivo pode ser importado para o Postman e já contém todas as requisições GET, POST, PUT e DELETE usadas no teste.
+- Para visualizar todos os endpoints da aplicação, utilizei o `Swagger` para gerar a documentação.   
+Para acessar a página do `Swagger-UI`, entre com a seguinte url no navegador  
+<code>
+http://localhost:8080/swagger-ui/
+</code>
 
 ### Links úteis
 - [Spring Boot Initialzr](https://start.spring.io/)
