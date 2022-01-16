@@ -1,6 +1,6 @@
-package br.com.regissanme.springbootestudosjpa.repository;
+package br.com.regissanme.springbootjpa.repository;
 
-import br.com.regissanme.springbootestudosjpa.entity.Evento;
+import br.com.regissanme.springbootjpa.entity.Evento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

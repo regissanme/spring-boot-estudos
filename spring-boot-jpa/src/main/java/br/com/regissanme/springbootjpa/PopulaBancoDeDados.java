@@ -1,11 +1,11 @@
-package br.com.regissanme.springbootestudosjpa;
+package br.com.regissanme.springbootjpa;
 
-import br.com.regissanme.springbootestudosjpa.entity.Evento;
-import br.com.regissanme.springbootestudosjpa.entity.LocalEvento;
-import br.com.regissanme.springbootestudosjpa.entity.Pessoa;
-import br.com.regissanme.springbootestudosjpa.entity.Telefone;
-import br.com.regissanme.springbootestudosjpa.repository.EventoRepository;
-import br.com.regissanme.springbootestudosjpa.repository.PessoaRepository;
+import br.com.regissanme.springbootjpa.entity.Evento;
+import br.com.regissanme.springbootjpa.entity.LocalEvento;
+import br.com.regissanme.springbootjpa.entity.Pessoa;
+import br.com.regissanme.springbootjpa.entity.Telefone;
+import br.com.regissanme.springbootjpa.repository.EventoRepository;
+import br.com.regissanme.springbootjpa.repository.PessoaRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Projeto: spring-boot-estudos-jpa

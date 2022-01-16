@@ -1,8 +1,8 @@
-package br.com.regissanme.springbootestudosjpa.service;
+package br.com.regissanme.springbootjpa.service;
 
-import br.com.regissanme.springbootestudosjpa.entity.Pessoa;
-import br.com.regissanme.springbootestudosjpa.exceptions.PessoaNaoEncontradaException;
-import br.com.regissanme.springbootestudosjpa.repository.PessoaRepository;
+import br.com.regissanme.springbootjpa.entity.Pessoa;
+import br.com.regissanme.springbootjpa.exceptions.PessoaNaoEncontradaException;
+import br.com.regissanme.springbootjpa.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

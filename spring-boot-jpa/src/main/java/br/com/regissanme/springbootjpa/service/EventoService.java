@@ -1,10 +1,8 @@
-package br.com.regissanme.springbootestudosjpa.service;
+package br.com.regissanme.springbootjpa.service;
 
-import br.com.regissanme.springbootestudosjpa.entity.Evento;
-import br.com.regissanme.springbootestudosjpa.entity.Pessoa;
-import br.com.regissanme.springbootestudosjpa.exceptions.EventoNaoEncontradoException;
-import br.com.regissanme.springbootestudosjpa.exceptions.PessoaNaoEncontradaException;
-import br.com.regissanme.springbootestudosjpa.repository.EventoRepository;
+import br.com.regissanme.springbootjpa.entity.Evento;
+import br.com.regissanme.springbootjpa.exceptions.EventoNaoEncontradoException;
+import br.com.regissanme.springbootjpa.repository.EventoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +37,7 @@ public class EventoService {
         verificaSeExiste(id);
         eventoRepository.deleteById(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT)
-                .body(String.format("Evento com ID: $d deletado com sucesso!", id));
+                .body(String.format("Evento com ID: %d deletado com sucesso!", id));
     }
 
     public ResponseEntity<Evento> findById(Long id) throws EventoNaoEncontradoException {

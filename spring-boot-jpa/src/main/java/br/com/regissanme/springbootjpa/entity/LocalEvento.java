@@ -1,4 +1,4 @@
-package br.com.regissanme.springbootestudosjpa.entity;
+package br.com.regissanme.springbootjpa.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

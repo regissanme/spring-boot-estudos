@@ -1,6 +1,6 @@
-package br.com.regissanme.springbootestudosjpa.repository;
+package br.com.regissanme.springbootjpa.repository;
 
-import br.com.regissanme.springbootestudosjpa.entity.Pessoa;
+import br.com.regissanme.springbootjpa.entity.Pessoa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

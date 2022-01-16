@@ -1,4 +1,4 @@
-package br.com.regissanme.springbootestudosjpa.config;
+package br.com.regissanme.springbootjpa.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

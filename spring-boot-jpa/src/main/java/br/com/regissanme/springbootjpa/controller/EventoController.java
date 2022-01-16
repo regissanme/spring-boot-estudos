@@ -1,8 +1,8 @@
-package br.com.regissanme.springbootestudosjpa.controller;
+package br.com.regissanme.springbootjpa.controller;
 
-import br.com.regissanme.springbootestudosjpa.entity.Evento;
-import br.com.regissanme.springbootestudosjpa.exceptions.EventoNaoEncontradoException;
-import br.com.regissanme.springbootestudosjpa.service.EventoService;
+import br.com.regissanme.springbootjpa.entity.Evento;
+import br.com.regissanme.springbootjpa.exceptions.EventoNaoEncontradoException;
+import br.com.regissanme.springbootjpa.service.EventoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

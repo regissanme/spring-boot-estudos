@@ -1,6 +1,4 @@
-package br.com.regissanme.springbootestudosjpa.entity;
-
-import org.springframework.beans.factory.annotation.Value;
+package br.com.regissanme.springbootjpa.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -88,13 +86,11 @@ public class Pessoa {
     @Override
     public String toString() {
 
-        return new StringBuilder()
-                .append("Pessoa{")
-                .append("id=").append(id)
-                .append(", nome=").append(nome)
-                .append(", ").append(getTelefonesToString())
-                .append('}')
-                .toString();
+        return "Pessoa{" +
+                "id=" + id +
+                ", nome=" + nome +
+                ", " + getTelefonesToString() +
+                '}';
     }
 
     private StringBuilder getTelefonesToString() {
