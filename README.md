@@ -9,12 +9,13 @@ Fazer um estudo de cada passo do desenvolvimento de uma API REST, utilizando o S
 
 | Status | Projeto | Descrição |
 | :---: | --- | --- |
-| ok | `spring-boot-jpa` | Estudos da criação de  entidades, das **@Annotations** e dos relacionamentos entre entidades |
-| Em construção | spring-boot-repository | Estudo da camada de repositório (**@Repository**) | 
-| Em construção | spring-boot-exceptions | Estudo da camada de exceptions customizados | 
-| Em construção | spring-boot-services | Estudo da camada de serviço (**@Service**) | 
-| Em construção | spring-boot-controller | Estudo da camada de controle (**@RestController**) | 
-| Em construção | spring-boot-| Estudo de testes unitários (**@Test**) | 
+| :ballot_box_with_check: | `spring-boot-jpa` | Estudos da criação de  entidades, das **@Annotations** e dos relacionamentos entre entidades |
+| :white_square_button: | spring-boot-repository | Estudo da camada de repositório (**@Repository**) |
+| :white_square_button: | spring-boot-exceptions | Estudo da camada de exceptions customizados | 
+| :white_square_button: | spring-boot-services | Estudo da camada de serviço (**@Service**) | 
+| :white_square_button: | spring-boot-controller | Estudo da camada de controle (**@RestController**) | 
+| :white_square_button: | spring-boot-| Estudo de testes unitários (**@Test**) | 
+
 
 ### Outros estudos futuros  
 
