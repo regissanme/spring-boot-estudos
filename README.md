@@ -1,31 +1,25 @@
+<img src="https://img.shields.io/github/license/regissanme/spring-boot-estudos"/>  
+
 # Meus estudos para o desenvolvimento de uma API's REST usando o ecossistema do Spring Boot
-
-
-⚠️Estes estudos não têm garantia de suas funcionalidades em projetos comerciais. ⚠️
-
-------------
-
 
 ### Objetivo: 
 Fazer um estudo de cada passo do desenvolvimento de uma API REST, utilizando o Spring Boot.  
 
 ### Visão Geral
 
-| Comando | Descrição |
-| --- | --- |
-| `spring-boot-jpa` | Estudos da criação de  entidades, das **@Annotations** e dos relacionamentos entre entidades |
-| Futuro estudo | Estudo da camada de repositório (**@Repository**) | 
-| Futuro estudo | Estudo da camada de exceptions customizados | 
-| Futuro estudo | Estudo da camada de serviço (**@Service**) | 
-| Futuro estudo | Estudo da camada de controle (**@RestController**) | 
-| Futuro estudo | Estudo de testes unitários (**@Test**) | 
+| Status | Projeto | Descrição |
+| --- | --- | --- |
+| - [x] ok? | `spring-boot-jpa` | Estudos da criação de  entidades, das **@Annotations** e dos relacionamentos entre entidades |
+| - [x] ok? | Em construção | Estudo da camada de repositório (**@Repository**) | 
+| - [x] ok? | Em construçã | Estudo da camada de exceptions customizados | 
+| - [x] ok? | Em construçã | Estudo da camada de serviço (**@Service**) | 
+| - [x] ok? | Em construçã | Estudo da camada de controle (**@RestController**) | 
+| - [x] ok? | Em construçã | Estudo de testes unitários (**@Test**) | 
 
 ### Outros estudos futuros  
 
 - Documentação da API com `Swagger`  
 - Redução da verbosidade com `Lombok`  
-
-
 
 ### Recursos utilizados nesses estudos
 - Java 11 ou versões superiores.
@@ -64,5 +58,11 @@ Fazer um estudo de cada passo do desenvolvimento de uma API REST, utilizando o S
 #### Este repositório foi criado para fins de estudo, então fique à vontade para cloná-lo, sugerir mudanças ou correções.
 #### Todo comentário e/ou crítica será muito bem vindo!🤝
 
-------------
-Disponibilizado por [Reginaldo (**regissanme**)](https://www.linkedin.com/in/reginaldo-santos-de-medeiros-59517324/).
+### Autor
+---
+
+
+Feito com ❤️ por Reginaldo Santos de Medeiros 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Reginaldo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/reginaldo-santos-de-medeiros-59517324/)](https://www.linkedin.com/in/reginaldo-santos-de-medeiros-59517324/) [![Gmail Badge](https://img.shields.io/badge/-rsanme@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rsanme@gmail.com)](mailto:rsanme@gmail.com)
+
