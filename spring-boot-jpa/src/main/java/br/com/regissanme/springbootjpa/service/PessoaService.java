@@ -22,34 +22,27 @@ public class PessoaService {
     @Autowired
     private PessoaRepository pessoaRepository;
 
-    public ResponseEntity<Pessoa> save(Pessoa pessoa) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(pessoaRepository.save(pessoa));
+    public Pessoa save(Pessoa pessoa) throws PessoaNaoEncontradaException {
+        if(pessoa == null) throw new PessoaNaoEncontradaException(null);
+        return pessoaRepository.save(pessoa);
     }
 
-    public ResponseEntity<Pessoa> update(Long id, Pessoa pessoa) throws PessoaNaoEncontradaException {
+    public Pessoa update(Long id, Pessoa pessoa) throws PessoaNaoEncontradaException {
         findById(id);
-        return ResponseEntity.ok()
-                .body(pessoaRepository.save(pessoa));
+        return pessoaRepository.save(pessoa);
     }
 
-    public ResponseEntity<String> delete(Long id) throws PessoaNaoEncontradaException {
-        pessoaRepository.delete(verificaSeExiste(id));
-        return ResponseEntity.status(HttpStatus.NO_CONTENT)
-                .body(String.format("Pessoa com ID: %d excluída com sucesso!", id));
+    public void delete(Long id) throws PessoaNaoEncontradaException {
+        findById(id);
+        pessoaRepository.deleteById(id);
     }
 
-    public ResponseEntity<Pessoa> findById(Long id) throws PessoaNaoEncontradaException {
-        return ResponseEntity.ok()
-                .body(verificaSeExiste(id));
-    }
-
-    public ResponseEntity<List<Pessoa>> findAll() {
-        return ResponseEntity.ok()
-                .body(pessoaRepository.findAll());
-    }
-
-    private Pessoa verificaSeExiste(Long id) throws PessoaNaoEncontradaException {
+    public Pessoa findById(Long id) throws PessoaNaoEncontradaException {
         return pessoaRepository.findById(id).orElseThrow(() -> new PessoaNaoEncontradaException(id));
+    }
+
+    public List<Pessoa> findAll() {
+        return pessoaRepository.findAll();
     }
 
 }

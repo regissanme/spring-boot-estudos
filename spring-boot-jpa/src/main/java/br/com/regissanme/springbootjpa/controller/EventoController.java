@@ -4,6 +4,7 @@ import br.com.regissanme.springbootjpa.entity.Evento;
 import br.com.regissanme.springbootjpa.exceptions.EventoNaoEncontradoException;
 import br.com.regissanme.springbootjpa.service.EventoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,27 +26,34 @@ public class EventoController {
 
     @GetMapping
     public ResponseEntity<List<Evento>> findAll() {
-        return eventoService.findAll();
+
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(eventoService.findAll());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Evento> findById(@PathVariable Long id) throws EventoNaoEncontradoException {
-        return eventoService.findById(id);
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(eventoService.findById(id));
     }
 
     @PostMapping
-    public ResponseEntity<Evento> save(@RequestBody @Valid Evento evento) {
-        return eventoService.save(evento);
+    public ResponseEntity<Evento> save(@RequestBody @Valid Evento evento) throws EventoNaoEncontradoException {
+
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(eventoService.save(evento));
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<Evento> update(@PathVariable Long id, @RequestBody @Valid Evento evento) throws EventoNaoEncontradoException {
-        return eventoService.update(id, evento);
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(eventoService.update(id, evento));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> delete(@PathVariable Long id) throws EventoNaoEncontradoException {
-        return eventoService.delete(id);
+    public ResponseEntity<?> delete(@PathVariable Long id) throws EventoNaoEncontradoException {
+        eventoService.delete(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 
 
